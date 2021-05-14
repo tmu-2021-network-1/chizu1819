@@ -1,28 +1,27 @@
 /* ヘッダーの固定 */
 div#header-fixed
 { 
-    position: fixed;            /* ヘッダーの固定 */
-    top: 0px;                   /* 位置(上0px) */
-    left: 0px;                  /* 位置(右0px) */
-    width: 100%;                /* 横幅100%　*/
-    height: 100px;
-    margin-left: auto;
-    margin-right: auto;
+  position: fixed;            /* ヘッダーの固定 */
+  top: 0px;                   /* 位置(上0px) */
+  left: 0px;                  /* 位置(右0px) */
+  width: 100%;                /* 横幅100%　*/
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 div#header #other
 { 
-
-    background-color: white;
-    position: fixed;            /* ヘッダーの固定 */
-    top: 0px;                   /* 位置(上0px) */
-    left: 0px;                  /* 位置(右0px) */
-    width: 80%;                /* 横幅100%　*/
-    height: 100px;
-    margin-right: auto;
-    margin-left: 20%;
-    font-size: 100%;
-    font-weight:bold;
+  background-color: white;
+  position: fixed;            /* ヘッダーの固定 */
+  top: 0px;                   /* 位置(上0px) */
+  left: 0px;                  /* 位置(右0px) */
+  width: 80%;                /* 横幅100%　*/
+  height: 100px;
+  margin-right: auto;
+  margin-left: 20%;
+  font-size: 100%;
+  font-weight:bold;
 }
 
 div#header a
@@ -37,22 +36,20 @@ div#header #other a
 
 div#header #home
 {
-    background-color: white;
-    position: fixed;            /* ヘッダーの固定 */
-    top: 0px;                   /* 位置(上0px) */
-    left: 0px;                  /* 位置(右0px) */
-    width: 20%;                /* 横幅100%　*/
-    height: 100px;
-    font-size: 300%;
+  background-color: white;
+  position: fixed;            /* ヘッダーの固定 */
+  top: 0px;                   /* 位置(上0px) */
+  left: 0px;                  /* 位置(右0px) */
+  width: 20%;                /* 横幅100%　*/
+  height: 100px;
+  font-size: 300%;
 }
 
 div#header-bk {    /* 背景色 */
-
-	/*padding:10px 0 10px;       /* 上10px、下20pxをあける */
 	height:100px;              /* 縦の高さ110px */
-    width:100%;                /* 横の幅を100% */
-    margin-left: auto;
-    margin-right: auto;
+  width:100%;                /* 横の幅を100% */
+  margin-left: auto;
+  margin-right: auto;
 }
  
 div#header{
@@ -61,14 +58,11 @@ div#header{
 }
  
 #header div{
-
-
-    display:flex; 
-    /*  ▼装飾など  */
-    padding: 10px;
-    margin-top: auto;
-    margin-bottom: auto;
-    width: 100%;
+  display:flex; 
+  padding: 10px;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 100%;
 }
 
 div#header li {
@@ -253,7 +247,7 @@ a {
   height:250px;
 }
 
-
+/*footer*/
 .wrapper{
   min-height: 50vh;
   position: relative;/*←相対位置*/
