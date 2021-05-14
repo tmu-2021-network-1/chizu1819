@@ -10,31 +10,15 @@ const renderJson = (json) => {
   
   studios.forEach(studio => {
    const studioDiv = document.createElement('div');
-
-   const studioTitle = document.createElement("div");
-   studioTitle.className = 'studio-title';
-   studioTitle.textContent = studio['name-ja'];
-
-   const studioTitleEn = document.createElement("div");
-   studioTitleEn.className = 'studio-title-en';
-   studioTitleEn.textContent = studio['name-en'];
-
+   
    const studioImage = document.createElement("img");
    studioImage.id = studio['name-ja'];
    studioImage.className = 'studio-image';
    studioImage.src = studio['photo1'];
    studioImage.alt ='スタジオの写真';
 
-
-   const studiodDJa = document.createElement("span");
-   studiodDJa.className = 'studio-description-ja';
-   studiodDJa.textContent = studio['description-ja'];
-
-   
-   studioDiv.appendChild(studioTitle);
-   studioDiv.appendChild(studioTitleEn);
    studioDiv.appendChild(studioImage);
-   studioDiv.appendChild(studiodDJa);
+
 
    document.getElementById('studios').appendChild(studioDiv);
 

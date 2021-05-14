@@ -4,45 +4,48 @@ const sheet = 'Studio';
 const endpoint = `${uri}?id=${id}&sheet=${sheet}`;
 
 const renderJson = (json) => {
+  const links = json.records;
+  
+  links.forEach(link => {
+   const linkDiv = document.createElement('div');
+
+   const linkTitle = document.createElement("span");
+   linkTitle.className = 'link-title';
+   linkTitle.textContent = link['name-ja'];
+
+   const linkTitleEn = document.createElement("span");
+
+   linkTitleEn.className = 'link-title-en';
+   linkTitleEn.textContent = link['name-en'];
+
+   linkDiv.appendChild(linkTitle);
+   linkDiv.appendChild(linkTitleEn);
+   
+   document.getElementById('links').appendChild(linkDiv);
+
+ });
+
   const studios = json.records;
 
   studios.pop();
   
   studios.forEach(studio => {
    const studioDiv = document.createElement('div');
-
-   const studioTitle = document.createElement("div");
-   studioTitle.className = 'studio-title';
-   studioTitle.textContent = studio['name-ja'];
-
-   const studioTitleEn = document.createElement("div");
-   studioTitleEn.className = 'studio-title-en';
-   studioTitleEn.textContent = studio['name-en'];
-
+  
    const studioImage = document.createElement("img");
    studioImage.id = studio['name-ja'];
    studioImage.className = 'studio-image';
    studioImage.src = studio['photo1'];
    studioImage.alt ='スタジオの写真';
 
-
-   const studiodDJa = document.createElement("span");
-   studiodDJa.className = 'studio-description-ja';
-   studiodDJa.textContent = studio['description-ja'];
-
-   
-   studioDiv.appendChild(studioTitle);
-   studioDiv.appendChild(studioTitleEn);
    studioDiv.appendChild(studioImage);
-   studioDiv.appendChild(studiodDJa);
-
+   
    document.getElementById('studios').appendChild(studioDiv);
 
  });
-
-
   document.getElementById('result').textContent = JSON.stringify(json, null, 2);
 }
+
 
 const getData = async () => {
   try {

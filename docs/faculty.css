@@ -61,6 +61,8 @@ div#header{
 }
  
 #header div{
+
+
     display:flex; 
     /*  ▼装飾など  */
     padding: 10px;
@@ -96,72 +98,87 @@ body{
   font-family: 'Mukta', sans-serif;
 }
 
-
-  #studios > div {
-    margin: 1em 0;
-    padding: 0.5em;
-    background: #f8f8f8;
-    min-height: 3em;
-    margin-left: 1.5%;
-    margin-right: auto;
-    width: 30%;
-    height: 500px;
-    display: inline-block; 
-  }
-
-  #studios > div:first-child{
-    margin-top: 150px;
+#facultys2{
+  width: 20%;
+  margin-right: auto;
+  margin-left: 20%;
+  float: left;
 }
 
-  .studio-title {
-    font-weight: bold;
-    margin-left: 20px;
-    margin-bottom: auto;
-  }
-  .studio-title-en {
-    margin-left: 1em;
-    font-weight: 100;
-    opacity: 0.75;
-    margin-left: 20px;
-  }
+#facultys{
+  width: 40%;
+  margin-left: auto;
+  margin-right: 20%;
+  margin-top: 1em;
+  float: left;
+  height: 200px;
+}
 
-  .studio-image{
-    height:200px;
-    margin: 20px;
- 
-    margin: 0.5em;
-    float: right;
+.boxf{
+  overflow: hidden;
+  margin-top: 150px;
+}
 
-  }
-
-  .studio-description-ja{
-
-    font-size: small;
-    margin-top: auto;
-    margin: 1em;
-    float: right;
-  }
-
-  .wrapper{
-    min-height: 50vh;
-    position: relative;/*←相対位置*/
-    padding-bottom: 120px;/*←footerの高さ*/
-    box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
-  }
+#facultys2 > div {
+  height: 200px;
   
-  footer{
-    width: 100%;
+}
+
+#facultys > div {
+  height: 200px;
   
-    color: black;
-    opacity: 0.5;
-    text-align: center;
-    padding: 30px 0;
-    font-size: small;
-  
-    position: absolute;/*←絶対位置*/
-    bottom: 0; /*下に固定*/
-  }
-  
-  .name{
-    font-size: small;
-  }
+}
+
+.faculty-photo{
+  height:200px;
+}
+
+.f-faculty-ja{
+}
+
+.f-faculty-en{
+  font-size: small;
+  opacity: 0.5;
+  margin-left: 1em;
+}
+.f-faculty-title-en{
+  font-size: small;
+  opacity: 0.5;
+}
+.f-studio-en{
+
+  font-size: small;
+  opacity: 0.5;
+}
+
+.major-ja{
+
+}
+.major-en{
+  font-size: small;
+  opacity: 0.5;
+}
+
+.wrapper{
+  min-height: 50vh;
+  position: relative;/*←相対位置*/
+  padding-bottom: 120px;/*←footerの高さ*/
+  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+footer{
+  width: 100%;
+
+  color: black;
+  opacity: 0.5;
+  text-align: center;
+  padding: 30px 0;
+  font-size: small;
+
+  position: absolute;/*←絶対位置*/
+  bottom: 0; /*下に固定*/
+}
+
+.name{
+  font-size: small;
+}

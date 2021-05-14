@@ -12,7 +12,7 @@ div#header-fixed
 
 div#header #other
 { 
-
+    background-color: turquoise;
     background-color: white;
     position: fixed;            /* ヘッダーの固定 */
     top: 0px;                   /* 位置(上0px) */
@@ -36,7 +36,8 @@ div#header #other a
 }
 
 div#header #home
-{
+{ 
+    background-color: wheat;
     background-color: white;
     position: fixed;            /* ヘッダーの固定 */
     top: 0px;                   /* 位置(上0px) */
@@ -46,8 +47,9 @@ div#header #home
     font-size: 300%;
 }
 
-div#header-bk {    /* 背景色 */
-
+div#header-bk { 
+	background-color:red;     /* 背景色 */
+    background-color: white;
 	/*padding:10px 0 10px;       /* 上10px、下20pxをあける */
 	height:100px;              /* 縦の高さ110px */
     width:100%;                /* 横の幅を100% */
@@ -61,6 +63,8 @@ div#header{
 }
  
 #header div{
+    background-color: saddlebrown;
+    background-color: white;
     display:flex; 
     /*  ▼装飾など  */
     padding: 10px;
@@ -70,6 +74,8 @@ div#header{
 }
 
 div#header li {
+    background-color: salmon;
+    background-color: white;
     list-style: none;
     margin-right: auto;
     margin-left: auto;
@@ -92,76 +98,63 @@ div#header #home{
     margin-right: auto;
 }
 
-body{
-  font-family: 'Mukta', sans-serif;
-}
-
-
-  #studios > div {
-    margin: 1em 0;
-    padding: 0.5em;
-    background: #f8f8f8;
-    min-height: 3em;
-    margin-left: 1.5%;
+#links1{
+    width: 20%;
     margin-right: auto;
-    width: 30%;
-    height: 500px;
-    display: inline-block; 
-  }
-
-  #studios > div:first-child{
-    margin-top: 150px;
+    margin-left: 10%;
+  
+    float: left;
 }
 
-  .studio-title {
-    font-weight: bold;
-    margin-left: 20px;
-    margin-bottom: auto;
+#links2{
+    width: 60%;
+    margin-left: auto;
+    margin-right: 10%;
+
+    float: left;
+}
+
+.boxContainer{
+    overflow: hidden;
+    margin-top: 150px;
   }
-  .studio-title-en {
+
+.link-title {
+    font-weight: bold; 
+}
+
+.link-title-en {
     margin-left: 1em;
-    font-weight: 100;
-    opacity: 0.75;
-    margin-left: 20px;
-  }
+}
 
-  .studio-image{
-    height:200px;
-    margin: 20px;
- 
-    margin: 0.5em;
-    float: right;
+.venue-ja {
+    margin-left: 1em;
 
-  }
+}
 
-  .studio-description-ja{
+.description-ja {
+    margin-left: 1em;
+    margin-right: 1em;
+}
 
-    font-size: small;
-    margin-top: auto;
-    margin: 1em;
-    float: right;
-  }
+#links2 > div {
+    margin: 1em 0;
+    margin-top: 30px;
 
-  .wrapper{
-    min-height: 50vh;
-    position: relative;/*←相対位置*/
-    padding-bottom: 120px;/*←footerの高さ*/
-    box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
-  }
-  
-  footer{
-    width: 100%;
-  
-    color: black;
-    opacity: 0.5;
-    text-align: center;
-    padding: 30px 0;
-    font-size: small;
-  
-    position: absolute;/*←絶対位置*/
-    bottom: 0; /*下に固定*/
-  }
-  
-  .name{
-    font-size: small;
-  }
+    padding: 0.5em;
+    min-height: 3em;
+    height: 200px;
+}
+
+#links1 > div {
+    margin: 1em 0;
+    margin-top: 30px;
+
+    padding: 0.5em;
+    min-height: 3em;
+    height: 200px;
+}
+
+.link-photo{
+    height:250px;
+}

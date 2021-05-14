@@ -1,0 +1,279 @@
+/* ヘッダーの固定 */
+div#header-fixed
+{ 
+    position: fixed;            /* ヘッダーの固定 */
+    top: 0px;                   /* 位置(上0px) */
+    left: 0px;                  /* 位置(右0px) */
+    width: 100%;                /* 横幅100%　*/
+    height: 100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div#header #other
+{ 
+
+    background-color: white;
+    position: fixed;            /* ヘッダーの固定 */
+    top: 0px;                   /* 位置(上0px) */
+    left: 0px;                  /* 位置(右0px) */
+    width: 80%;                /* 横幅100%　*/
+    height: 100px;
+    margin-right: auto;
+    margin-left: 20%;
+    font-size: 100%;
+    font-weight:bold;
+}
+
+div#header a
+{ 
+  color: black;
+}
+
+div#header #other a
+{ 
+  color: black;
+}
+
+div#header #home
+{
+    background-color: white;
+    position: fixed;            /* ヘッダーの固定 */
+    top: 0px;                   /* 位置(上0px) */
+    left: 0px;                  /* 位置(右0px) */
+    width: 20%;                /* 横幅100%　*/
+    height: 100px;
+    font-size: 300%;
+}
+
+div#header-bk {    /* 背景色 */
+
+	/*padding:10px 0 10px;       /* 上10px、下20pxをあける */
+	height:100px;              /* 縦の高さ110px */
+    width:100%;                /* 横の幅を100% */
+    margin-left: auto;
+    margin-right: auto;
+}
+ 
+div#header{
+    display:flex;
+    font-size:x-large;
+}
+ 
+#header div{
+
+
+    display:flex; 
+    /*  ▼装飾など  */
+    padding: 10px;
+    margin-top: auto;
+    margin-bottom: auto;
+    width: 100%;
+}
+
+div#header li {
+    list-style: none;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+div#header li a{
+    text-decoration: none;
+}
+
+div#header #home{
+
+    margin-right: auto;
+    
+}
+
+#header div:last-child{
+    background-color: white;
+    margin-right: auto;
+}
+
+body{
+  font-family: 'Mukta', sans-serif;
+}
+
+
+.studio-image{
+  height: 200px;
+  width: 100%;
+}
+
+#studios{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+#studios > div {
+  padding: 0.5em;
+
+  min-height: 3em;
+  display: inline-block;
+  width: 20%;
+  margin-left: 3%;
+}
+
+#studios div:first-child{
+  margin-top: 150px;
+}
+
+a {
+  text-decoration:none; 
+}
+
+
+/*faculty*/
+
+#facultys2{
+  width: 20%;
+  margin-right: auto;
+  margin-left: 20%;
+  float: left;
+}
+
+#facultys{
+  width: 40%;
+  margin-left: auto;
+  margin-right: 20%;
+  margin-top: 1em;
+  float: left;
+  height: 200px;
+}
+
+.boxf{
+  overflow: hidden;
+  margin-top: 150px;
+}
+
+#facultys2 > div {
+  height: 200px;
+  
+}
+
+#facultys > div {
+  height: 200px;
+  
+}
+
+.faculty-photo{
+  height:200px;
+}
+
+.f-faculty-ja{
+}
+
+.f-faculty-en{
+  font-size: small;
+  opacity: 0.5;
+  margin-left: 1em;
+}
+.f-faculty-title-en{
+  font-size: small;
+  opacity: 0.5;
+}
+.f-studio-en{
+
+  font-size: small;
+  opacity: 0.5;
+}
+
+.major-ja{
+
+}
+.major-en{
+  font-size: small;
+  opacity: 0.5;
+}
+
+/*link*/
+#links1{
+  width: 20%;
+  margin-right: auto;
+  margin-left: 10%;
+
+  float: left;
+}
+
+#links2{
+  width: 60%;
+  margin-left: auto;
+  margin-right: 10%;
+
+  float: left;
+}
+
+.boxContainer{
+  overflow: hidden;
+  margin-top: 150px;
+}
+
+.link-title {
+  font-weight: bold; 
+}
+
+.link-title-en {
+  margin-left: 1em;
+}
+
+.venue-ja {
+  margin-left: 1em;
+
+}
+
+.description-ja {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+#links2 > div {
+  margin: 1em 0;
+  margin-top: 30px;
+
+  padding: 0.5em;
+  min-height: 3em;
+  height: 200px;
+}
+
+#links1 > div {
+  margin: 1em 0;
+  margin-top: 30px;
+
+  padding: 0.5em;
+  min-height: 3em;
+  height: 200px;
+}
+
+.link-photo{
+  height:250px;
+}
+
+
+.wrapper{
+  min-height: 50vh;
+  position: relative;/*←相対位置*/
+  padding-bottom: 120px;/*←footerの高さ*/
+  box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
+}
+
+footer{
+  width: 100%;
+
+  color: black;
+  opacity: 0.5;
+  text-align: center;
+  padding: 30px 0;
+  font-size: small;
+
+  position: absolute;/*←絶対位置*/
+  bottom: 0; /*下に固定*/
+}
+
+.name{
+  font-size: small;
+}
