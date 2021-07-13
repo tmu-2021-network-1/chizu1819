@@ -1,0 +1,123 @@
+<html>
+  <head>
+    <meta charset = "utf-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <title>3分の待ち時間</title>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@100;300&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+   
+  </head>
+  <body>
+    <!--
+    <main>
+        <div class="step1">
+          <h2>ステップ1</h2>
+          <p>こんにちは。こんにちは。こんにちは。こんにちは。</p>
+        </div>
+        <div class="step2">
+          <h2>ステップ2</h2>
+          <p>コンバンワコンバンワコンバンワコンバンワ</p>
+        </div>
+    </main>
+    -->
+
+    <div class="content">
+        <div id="header-fixed">
+            <div id="header-bk">
+                <div id="header">
+                    <div id="home">
+                        <li><a href="index.html">3分の待ち時間</a>
+                    </div>
+                    <div id="other">
+                        <div><li><a href="index.html" style="font-weight:bolder;">7/11</a></div>
+                        <div><li><a href="#" style="font-weight:lighter;">7/11</a></div>
+                        <div><li><a href="about.html" style="font-weight:lighter;">このサイトについて</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="oyuboxContainer">
+            <div class="oyubox"></div>
+            <div class="oyubox">
+                <div id="oyu_img_box">
+                    <video src="oyu.mp4" autoplay muted style="width: 80%;">
+                </div>
+            </div>
+            <div class="oyubox"></div>
+        </div>
+        
+        <div class="animboxContainer">
+            <div class="animbox">
+                <div id="anim_img_box">
+                    <img id="anim_img" src="anim/001.jpg" style="width: 80%;"/>
+                </div>
+                <div id="anim_img_padding" class="padding">
+                    このエリアは画像を動かすためにスクロールされますが、重なっているので見えません。<br>
+                    このサイズはJavaScriptで変わります。
+                </div>
+            </div>
+            <div class="animbox">
+                <div id="anim_img_box2">
+                    <img id="anim_img2" src="anim_2/001.jpg" style="width: 80%;"/>
+                </div>
+                <div id="anim_img_padding2" class="padding">
+                    このエリアは画像を動かすためにスクロールされますが、重なっているので見えません。<br>
+                    このサイズはJavaScriptで変わります。
+                </div>
+            </div>
+            <div class="animbox">
+                <div id="anim_img_box3">
+                    <img id="anim_img3" src="anim_3/001.jpg" style="width: 80%;"/>
+                </div>
+                <div id="anim_img_padding3" class="padding">
+                    このエリアは画像を動かすためにスクロールされますが、重なっているので見えません。<br>
+                    このサイズはJavaScriptで変わります。
+                </div>
+            </div>
+        </div>
+
+        <div id="console_log">待ち時間 0分0秒</div>
+        <br>
+
+        <div id="final">
+            <p>！！！！！！！</p>
+            <!--隠れているテキスト
+                <video src="Ink.mp4" autoplay muted style="width: 50%;">
+            -->
+            
+            <div id="hide1" style="display: none;">10秒未満！
+               
+            </div>
+            
+            <div id="hide2" style="display: none;"> <img id="anim_img" src="anim/001.jpg" style="width: 50%;"/>
+               
+            </div>
+            <div id="js-scroll-top" class="scroll-top"style="display: none;" >
+                <input type="button" name="buttonName" id="js-scroll-top" value="待ち直す" onClick="window.location.href='index2.html'"/>
+            </div>
+            
+           
+        </div>
+    </div>
+
+    <br>
+    
+    <div class="wrapper">
+        <footer>
+          <p>
+            東京都立大学 システムデザイン学部 インダストリアルアート学科
+            <br>©️2021にしもりちず
+          </p>
+          
+        </footer>
+    </div>
+    <script src="script2.js"></script>
+  </body>
+</html>
