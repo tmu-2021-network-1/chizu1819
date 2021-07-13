@@ -8,10 +8,10 @@ body{
 }
 
 main{
-    background-color: aqua;
+    background-color: white;
 }
 
-/*count*/
+/*timercount*/
 div#console_log{
     font-size: 15px;
     font-weight: bold;
@@ -19,10 +19,10 @@ div#console_log{
     left: 25px;
     bottom: 25px;
     z-index: 100;
-    background-color: hotpink;
+    background-color: whitesmoke;
     width: 130px;
     height: 50px;
-    color: #fff;
+    
     line-height: 50px;
     text-align: center;
 }
@@ -42,15 +42,15 @@ div#console_log{
 }
 
 /*animation*/
-#anim_img_box{
+#anim_img_box {
     position: sticky;
     width: 100%;
-    height: 100vh;
+    height: 80vh;
     top:0;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: lightgray;
+    background-color: lavenderblush;
 }
 
 #anim_img{
@@ -59,12 +59,12 @@ div#console_log{
 #anim_img_box2{
   position: sticky;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   top:0;
   display: flex;
   justify-content: center;
   align-items: center;
-  /*background-color: lightgreen;*/
+  background-color: white;
 }
 
 #anim_img2{
@@ -74,12 +74,12 @@ div#console_log{
 #anim_img_box3{
   position: sticky;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   top:0;
   display: flex;
   justify-content: center;
   align-items: center;
-  /*background-color: lightgray;*/
+  background-color: white;
 }
 
 #anim_img3{
@@ -89,18 +89,18 @@ div#console_log{
 #oyu_img_box{
   position: sticky;
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   top:0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightgray;
+  background-color: white;
 }
 
 .animbox{
   display: table-cell;
   vertical-align: middle;
-  background-color: lightcoral;
+  background-color: white;
 }
 
 .animboxContainer{
@@ -113,7 +113,7 @@ div#console_log{
   height: 50vh;
   display: table-cell;
   vertical-align: middle;
-  background-color: lightcoral;
+  background-color: white;
   
 }
 
@@ -142,6 +142,7 @@ div#console_log{
 }
 
 /*待ち直すボタン*/
+/*
 .scroll-top {
     font-size: 15px;
     position: fixed;
@@ -156,6 +157,32 @@ div#console_log{
     line-height: 70px;
     text-align: center;
 }
+*/
+#js-scroll-top {
+  font-size     : 10pt;
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 100;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  color: #fff;
+  line-height: 70px;
+  text-align    : center;      /* 文字位置   */
+  cursor        : pointer;     /* カーソル   */
+  background-color: whitesmoke;
+  color         : black;
+  line-height   : 1em;         /* 1行の高さ  */
+  opacity       : 1;           /* 透明度     */
+  transition    : .3s;         /* なめらか変化 */
+  box-shadow    : 3px 3px 3px #666666;  /* 影の設定 */
+}
+.button:hover {
+  box-shadow    : none;        /* カーソル時の影消去 */
+  opacity       : 0.8;         /* カーソル時透明度 */
+}
+
 
 /*header*/
 div#header-fixed
@@ -164,19 +191,19 @@ div#header-fixed
   top: 0px;                   /* 位置(上0px) */
   left: 0px;                  /* 位置(右0px) */
   width: 100%;                /* 横幅100%　*/
-  height: 50px;
+  height: 100px;
   margin-left: auto;
   margin-right: auto;
 }
 
 div#header #other
 { 
-  background-color: white;
+  background-color: lawngreen;
   /*position: fixed;             ヘッダーの固定 */
   top: 0px;                   /* 位置(上0px) */
   left: 0px;                  /* 位置(右0px) */
   width: 80%;                /* 横幅100%　*/
-  height: 50px;
+  height: 100px;
   margin-right: auto;
   margin-left: 20%;
   font-size: small;
@@ -194,18 +221,18 @@ div#header #other a
 
 div#header #home
 {
-  background-color: lawngreen;
+  /*background-color: lawngreen;*/
   /*position: fixed;             ヘッダーの固定 */
   top: 0px;
   left: 0px;
   width: 70%;
-  height: 50px;
+  height: 100px;
   font-size: xx-large;
 }
 
 div#header-bk {
   width:100%;
-  height:50px;
+  height:100px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -263,7 +290,7 @@ div#header #home{
   position: relative;/*←相対位置*/
   padding-bottom: 100px;/*←footerの高さ*/
   box-sizing: border-box;/*←全て含めてmin-height:100vhに*/
-  background-color: aqua;
+  background-color: white;
 }
 footer{
   width: 100%;
@@ -282,7 +309,7 @@ footer{
 .box{
     display: table-cell;
     vertical-align: middle;
-    background-color: lightcoral;
+    background-color: white;
   }
   
 .boxContainer{

@@ -14,19 +14,7 @@
    
   </head>
   <body>
-    <!--
-    <main>
-        <div class="step1">
-          <h2>ステップ1</h2>
-          <p>こんにちは。こんにちは。こんにちは。こんにちは。</p>
-        </div>
-        <div class="step2">
-          <h2>ステップ2</h2>
-          <p>コンバンワコンバンワコンバンワコンバンワ</p>
-        </div>
-    </main>
-    -->
-
+    <body oncontextmenu="return false;">
     <div class="content">
         <div id="header-fixed">
             <div id="header-bk">
@@ -35,32 +23,54 @@
                         <li><a href="index.html">3分の待ち時間</a>
                     </div>
                     <div id="other">
-                        <div><li><a href="index.html" style="font-weight:bolder;">7/11</a></div>
-                        <div><li><a href="#" style="font-weight:lighter;">7/11</a></div>
+                        <div><li><a href="index.html" style="font-weight:bolder;">2021.7.13 14:13~</a></div>
+                        <div><li><a href="#" style="font-weight:lighter;">2021.7/14</a></div>
                         <div><li><a href="about.html" style="font-weight:lighter;">このサイトについて</a></div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <main>
-            <div class="step1">
-              <h2>ステップ1</h2>
-              <p>こんにちは。こんにちは。こんにちは。こんにちは。</p>
-            </div>
-            <div class="step2">
-              <h2>ステップ2</h2>
-              <p>コンバンワコンバンワコンバンワコンバンワ</p>
-            </div>
-        </main>
+        <br>
 
-        <div id="anim_img_box">
-            <img id="anim_img" src="anim/001.jpg" alt="画像の説明" style="width: 30%;"/>
+        <div class="oyuboxContainer">
+            <div class="oyubox"></div>
+            <div class="oyubox">
+                <div id="oyu_img_box">
+                    <video src="oyu.mp4" autoplay muted style="width: 80%;">
+                </div>
+            </div>
+            <div class="oyubox"></div>
         </div>
-    
-        <div id="anim_img_padding" class="padding">
-            このエリアは画像を動かすためにスクロールされますが、重なっているので見えません。<br>
-            このサイズはJavaScriptで変わります。
+        
+        <div class="animboxContainer">
+            <div class="animbox">
+                <div id="anim_img_box">
+                    <img id="anim_img" src="anim/001.jpg" style="width: 80%;"/>
+                </div>
+                <div id="anim_img_padding" class="padding">
+                    このエリアは画像を動かすためにスクロールされますが、重なっているので見えません。<br>
+                    このサイズはJavaScriptで変わります。
+                </div>
+            </div>
+            <div class="animbox">
+                <div id="anim_img_box2">
+                    <img id="anim_img2" src="anim_2/001.jpg" style="width: 80%;"/>
+                </div>
+                <div id="anim_img_padding2" class="padding">
+                    このエリアは画像を動かすためにスクロールされますが、重なっているので見えません。<br>
+                    このサイズはJavaScriptで変わります。
+                </div>
+            </div>
+            <div class="animbox">
+                <div id="anim_img_box3">
+                    <img id="anim_img3" src="anim_3/001.jpg" style="width: 80%;"/>
+                </div>
+                <div id="anim_img_padding3" class="padding">
+                    このエリアは画像を動かすためにスクロールされますが、重なっているので見えません。<br>
+                    このサイズはJavaScriptで変わります。
+                </div>
+            </div>
         </div>
 
         <div id="console_log">待ち時間 0分0秒</div>
@@ -68,18 +78,38 @@
 
         <div id="final">
             <p>！！！！！！！</p>
-            <!--隠れているテキスト
+            <!--
                 <video src="Ink.mp4" autoplay muted style="width: 50%;">
             -->
             
-            <div id="hide1" style="display: none;">10秒未満！
+            <div id="hide1" style="display: none;">
+                0~1分
+            </div>
+            
+            <div id="hide2" style="display: none;">
+                1~2分
+                <img id="anim_img" src="anim/001.jpg" style="width: 50%;"/>
+            </div>
+
+            <div id="hide3" style="display: none;">
+                2~2分半
+                
+            </div>
+
+            <div id="hide4" style="display: none;">
+                2分半~3分
+               
+            </div>
+
+            <div id="hide5" style="display: none;">
+                3分~4分
                
             </div>
             
-            <div id="hide2" style="display: none;"> <img id="anim_img" src="anim/001.jpg" style="width: 50%;"/>
-               
-            </div>
-            <div id="js-scroll-top" class="scroll-top"style="display: none;" >待ち直す</div>
+            <input type="button" name="buttonName" id="js-scroll-top" style="display: none;" value="待ち直す" onClick="window.location.href='index.html'"/>
+          
+            
+           
         </div>
     </div>
 

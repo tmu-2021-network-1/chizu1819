@@ -1,26 +1,56 @@
-/*画像アニメーション*/
+//アニメーション
 var tmp = {};
+var tmp2 = {};
+var tmp3 = {};
 loadImageToTmp();
 function loadImageToTmp(){
-    for(var i=1;i<=37;i++){
-        const _i = i;
-        const img = new Image();
-        tmp[_i] = null;
-        img.src = "anim/00"+_i+".jpg";
-        img.addEventListener("load",()=>{
-            tmp[_i] = img;
-        })
-    }
-}
-const image = document.getElementById("anim_img");
+  for(var i=1;i<=300;i++){
+    const _i = i;
+    
+    const img = new Image();
+    tmp[_i] = null;
+    img.src = "anim/00"+_i+".jpg";
+    img.addEventListener("load",()=>{
+        tmp[_i] = img;
+    })
 
-var SIZE = 37;// 枚数
-const PX = 100; // 100px分の移動ごと画像を1枚進める 
+    const img2 = new Image();
+    tmp2[_i] = null;
+    img2.src = "anim_2/00"+_i+".jpg";
+    img2.addEventListener("load",()=>{
+        tmp2[_i] = img2;
+    })
+
+    const img3 = new Image();
+    tmp3[_i] = null;
+    img3.src = "anim_3/00"+_i+".jpg";
+    img3.addEventListener("load",()=>{
+        tmp3[_i] = img3;
+    })
+  }
+}
+
+const image = document.getElementById("anim_img");
+const image2 = document.getElementById("anim_img2");
+const image3 = document.getElementById("anim_img3");
+
+var SIZE = 300;// 枚数
+const PX = 500; // 100px分の移動ごと画像を1枚進める 
 //const offset = $("#anim_img_box").offset();
 const myMain = document.getElementById("anim_img_box");
 const rect = myMain.getBoundingClientRect();
 const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
 const myTop = rect.top + scrollTop;
+
+const myMain2 = document.getElementById("anim_img_box2");
+const rect2 = myMain2.getBoundingClientRect();
+const scrollTop2 = window.pageYOffset || document.documentElement.scrollTop;
+const myTop2 = rect2.top + scrollTop2;
+
+const myMain3 = document.getElementById("anim_img_box3");
+const rect3 = myMain3.getBoundingClientRect();
+const scrollTop3 = window.pageYOffset || document.documentElement.scrollTop;
+const myTop3 = rect3.top + scrollTop3;
 
 // 画像を入れるdiv要素(position:stickyでトップに来たら固定される)
 window.addEventListener('scroll', function(){
@@ -36,10 +66,35 @@ window.addEventListener('scroll', function(){
     else if(y>= myTop + SIZE*PX){
         document.getElementById("anim_img_box").style.top = "-"+(dy-SIZE*PX) + "px";
     }
+
+    if(myTop2 < y && y < myTop2 + SIZE*PX)
+    {
+        document.getElementById("anim_img_box2").style.top = "0px";
+        const j = Math.floor(dy / PX);
+        if(j<=0||j>=SIZE) return;
+        if(tmp2[j].src) image2.src = tmp2[j].src;
+    }
+    else if(y>= myTop2 + SIZE*PX){
+        document.getElementById("anim_img_box2").style.top = "-"+(dy-SIZE*PX) + "px";
+    }
+
+    if(myTop3 < y && y < myTop3 + SIZE*PX)
+    {
+        document.getElementById("anim_img_box3").style.top = "0px";
+        const k = Math.floor(dy / PX);
+        if(k<=0||k>=SIZE) return;
+        if(tmp3[k].src) image3.src = tmp3[k].src;
+    }
+    else if(y>= myTop3 + SIZE*PX){
+        document.getElementById("anim_img_box3").style.top = "-"+(dy-SIZE*PX) + "px";
+    }
 });
 
 // スクロール分が終了したときに移動を始める
 document.getElementById("anim_img_padding").style.height = SIZE*PX + 'px';
+document.getElementById("anim_img_padding3").style.height = SIZE*PX + 'px';
+document.getElementById("anim_img_padding2").style.height = SIZE*PX + 'px';
+
 
 /*count*/
 let count = 0;
@@ -57,19 +112,64 @@ const countUp = () => {
             });
             clearTimeout(timeoutId);//timeoutIdをclearTimeoutで指定している
             console.log(count);
-            if(count < 10){
+            if(count < 60){
                 console.log("10秒未満");
                 $('#hide1').show('fast', function() 
                 {
                 
                 });
             }
-            else if(count > 10)
+            else if(count >= 60 && count < 120)
             {
                 $('#hide2').show('fast', function() 
                 {
                 });
                 $('#hide1').hide('fast', function() 
+                {
+                });
+            }
+            else if(count >= 120 && count <150)
+            {
+                $('#hide3').show('fast', function() 
+                {
+                });
+                $('#hide1').hide('fast', function() 
+                {
+                });
+                $('#hide2').hide('fast', function() 
+                {
+                });
+            }
+            else if(count >= 150 && count <180)
+            {
+                $('#hide4').show('fast', function() 
+                {
+                });
+                $('#hide1').hide('fast', function()
+                {
+                });
+                $('#hide2').hide('fast', function() 
+                {
+                });
+                $('#hide3').hide('fast', function() 
+                {
+                });
+            }
+            else if(count >= 180)
+            {
+                $('#hide5').show('fast', function() 
+                {
+                });
+                $('#hide1').hide('fast', function() 
+                {
+                });
+                $('#hide2').hide('fast', function() 
+                {
+                });
+                $('#hide3').hide('fast', function() 
+                {
+                });
+                $('#hide4').hide('fast', function() 
                 {
                 });
             }
@@ -100,8 +200,3 @@ $(window).on('touchmove', (e) => {
     }
 });
 
-/*待ち直す = リロードボタン*/
-const PageTopBtn = document.getElementById('js-scroll-top');
-PageTopBtn.addEventListener('click', () =>{
-    window.location.reload();
-});
