@@ -200,3 +200,35 @@ $(window).on('touchmove', (e) => {
     }
 });
 
+// ローディング画面をフェードインさせてページ遷移
+$(function(){
+    // リンクをクリックしたときの処理。外部リンクやページ内移動のスクロールリンクなどではフェードアウトさせたくないので少し条件を加えてる。
+    $('a[href ^= "https://newstella.co.jp"]' + 'a[target != "_blank"]').click(function(){
+        var url = $(this).attr('href'); // クリックされたリンクのURLを取得
+        $('#js-loader').fadeIn(600);    // ローディング画面をフェードイン
+        setTimeout(function(){ location.href = url; }, 800); // URLにリンクする
+        return false;
+    });
+});
+ 
+$(function() {
+    var h = $(window).height();
+     $('#loading__wrapper').css('display','none');
+     $('#is-loading ,#loading').height(h).css('display','block');
+});
+   
+$(window).on('load', function() {
+    $('#is-loading').delay(900).fadeOut(800);
+    $('#loading').delay(600).fadeOut(300);
+    $('#loading__wrapper').css('display', 'block');
+});
+
+$(function(){
+    setTimeout('stopload()',10000);
+});
+   
+function stopload(){
+    $('#loading__wrapper').css('display','block');
+    $('#is-loading').delay(900).fadeOut(800);
+    $('#loading').delay(600).fadeOut(300);
+}

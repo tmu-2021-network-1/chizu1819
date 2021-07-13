@@ -13,6 +13,16 @@
 </head>
 <body>
     <body oncontextmenu="return false;"></body>
+    <!-- ローディングのアニメーション -->
+    <div id="is-loading">
+        <div id="loading">
+        <img src="Preloader_5.gif" alt="ローディング中です" />
+        </div>
+    </div>
+
+    <!-- コンテンツ部分 -->
+    <div id="loading__wrapper">
+
     <div id="header-fixed">
         <div id="header-bk">
             <div id="header">
@@ -56,7 +66,35 @@
           <p class="name">©️にしもりちず</p>
         </footer>
     </div>
-      
+    
+   
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var h = $(window).height();
+            $('#loading__wrapper').css('display','none');
+            $('#is-loading ,#loading').height(h).css('display','block');
+        });
+
+        $(window).on('load', function() {
+            $('#is-loading').delay(900).fadeOut(800);
+            $('#loading').delay(600).fadeOut(300);
+            $('#loading__wrapper').css('display', 'block');
+        });
+
+
+        $(function(){
+            setTimeout('stopload()',10000);
+        });
+
+        function stopload(){
+            $('#loading__wrapper').css('display','block');
+            $('#is-loading').delay(900).fadeOut(800);
+            $('#loading').delay(600).fadeOut(300);
+        }
+    </script>
 </body>
 
 

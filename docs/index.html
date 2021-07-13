@@ -15,6 +15,17 @@
   </head>
   <body>
     <body oncontextmenu="return false;">
+
+    <!-- ローディングのアニメーション -->
+    <div id="is-loading">
+        <div id="loading">
+        <img src="Preloader_5.gif" alt="ローディング中です" />
+        </div>
+    </div>
+   
+    <!-- コンテンツ部分 -->
+    <div id="loading__wrapper">
+
     <div class="content">
         <div id="header-fixed">
             <div id="header-bk">
@@ -37,7 +48,7 @@
             <div class="oyubox"></div>
             <div class="oyubox">
                 <div id="oyu_img_box">
-                    <video src="oyu.mp4" autoplay muted style="width: 80%;">
+                    <video src="oyu.mp4" autoplay muted style="width: 80%;">Sorry, your browser doesn't support embedded videos.</video>
                 </div>
             </div>
             <div class="oyubox"></div>
@@ -73,7 +84,7 @@
             </div>
         </div>
 
-        <div id="console_log">待ち時間 0分0秒</div>
+        <div id="console_log"></div>
         <br>
 
         <div id="final">
@@ -107,23 +118,22 @@
             </div>
             
             <input type="button" name="buttonName" id="js-scroll-top" style="display: none;" value="待ち直す" onClick="window.location.href='index.html'"/>
-          
+
+        </div>
+        <br>
+        <div class="wrapper">
+            <footer>
+            <p>
+                東京都立大学 システムデザイン学部 インダストリアルアート学科
+                <br>©️2021にしもりちず
+            </p>
             
-           
+            </footer>
         </div>
     </div>
 
-    <br>
-    
-    <div class="wrapper">
-        <footer>
-          <p>
-            東京都立大学 システムデザイン学部 インダストリアルアート学科
-            <br>©️2021にしもりちず
-          </p>
-          
-        </footer>
+        <script src="script.js"></script>
     </div>
-    <script src="script.js"></script>
+
   </body>
 </html>
