@@ -104,12 +104,23 @@ const countUp = () => {
 
     $(window).scroll(function () {
         var pos = $('#anim_img_box').offset();/* mvを過ぎたmainタグの高さを取得して変数[pos]に格納 */
-
+        var pos2 = $('.oyuboxContainer').offset();
+    
+        if($(this).scrollTop() > pos2.top) {
+            $('#lside').show('fast', function() 
+            {
+            });
+            $('#rside').show('fast', function() 
+            {
+            });
+        }
+        
         if ($(this).scrollTop() > pos.top) {
             $('#js-scroll-top').show('fast', function() 
             {
                 //待ち直すボタンの表示
             });
+        
             clearTimeout(timeoutId);//timeoutIdをclearTimeoutで指定している
             console.log(count);
             if(count < 60){
@@ -128,7 +139,7 @@ const countUp = () => {
                 {
                 });
             }
-            else if(count >= 120 && count <150)
+            else if(count >= 120 && count <180)
             {
                 $('#hide3').show('fast', function() 
                 {
@@ -140,7 +151,7 @@ const countUp = () => {
                 {
                 });
             }
-            else if(count >= 150 && count <180)
+            else if(count >= 180 && count <240)
             {
                 $('#hide4').show('fast', function() 
                 {
@@ -155,7 +166,7 @@ const countUp = () => {
                 {
                 });
             }
-            else if(count >= 180)
+            else if(count >= 240)
             {
                 $('#hide5').show('fast', function() 
                 {
@@ -177,13 +188,13 @@ const countUp = () => {
     });
 }
 
-//3,000ミリ秒後にcountUp関数を呼び出す処理を追加
-setTimeout(countUp, 2000);
+//5,000ミリ秒後にcountUp関数を呼び出す処理を追加
+setTimeout(countUp, 20000);
 time = function (log) {
     const min =  Math.floor(log / 60);
     const sec =  log % 60;
     //console.log(min +"分" +sec +"秒");
-    document.getElementById('console_log').innerHTML = "待ち時間 "+ min +"分"+ sec+ "秒";
+    document.getElementById('console_log').innerHTML = "待ち時間（スクロールしてる時間) "+ min +"分"+ sec+ "秒";
 }
 
 
@@ -232,3 +243,108 @@ function stopload(){
     $('#is-loading').delay(900).fadeOut(800);
     $('#loading').delay(600).fadeOut(300);
 }
+
+/* */
+
+new Vivus('rcanvas1', {
+    start: 'autostart', 
+    type: 'delayed',duration: 5000,
+    animTimingFunction: Vivus.EASE
+    }, 
+    function(car){
+        setTimeout(function(){ car.reset().play(); }, 3000);
+    }
+);
+
+new Vivus('rcanvas2', {
+    start: 'autostart', duration: 30000,
+    type: 'delayed',
+    animTimingFunction: Vivus.EASE
+    }, 
+    function(car){
+      setTimeout(function(){ car.reset().play(); }, 3000);
+    }
+  );
+  
+  new Vivus('rcanvas3', {
+    start: 'autostart', 
+    type: 'delayed', duration: 40000,
+    animTimingFunction: Vivus.EASE
+    }, 
+    function(car){
+      setTimeout(function(){ car.reset().play(); }, 3000);
+    }
+);
+
+new Vivus('rcanvas4', {
+    start: 'autostart', 
+    type: 'delayed', duration: 20000,
+    animTimingFunction: Vivus.EASE
+    }, 
+    function(car){
+      setTimeout(function(){ car.reset().play(); }, 3000);
+    }
+  );
+
+
+new Vivus('men1', {
+    start: 'autostart', 
+    type: 'delayed', duration: 50000,
+    animTimingFunction: Vivus.EASE
+    }, 
+    function(car){
+      setTimeout(function(){ car.reset().play(); }, 3000);
+    }
+);
+
+new Vivus('men2', {
+    start: 'autostart', 
+    type: 'delayed', duration: 60000,
+    animTimingFunction: Vivus.EASE
+    }, 
+    function(car){
+        setTimeout(function(){ car.reset().play(); }, 3000);
+    }
+);
+  
+new Vivus('men3', {
+    start: 'autostart', 
+    type: 'delayed', duration: 70000,
+    animTimingFunction: Vivus.EASE
+    }, 
+    function(car){
+        setTimeout(function(){ car.reset().play(); }, 3000);
+    }
+);
+
+new Vivus('men4', {
+    start: 'autostart', 
+    type: 'delayed', duration: 80000,
+    animTimingFunction: Vivus.EASE
+    }, 
+    function(car){
+        setTimeout(function(){ car.reset().play(); }, 3000);
+    }
+);
+
+/*
+new Vivus('yakan1', {
+    start: 'autostart', 
+    type: 'delayed', duration: 1000, 
+    animTimingFunction: Vivus.EASE
+    }, 
+    function(car){
+      setTimeout(function(){ car.reset().play(); }, 3000);
+    }
+);
+
+new Vivus('sunadokei1', {
+    start: 'autostart', 
+    type: 'delayed', 
+    animTimingFunction: Vivus.EASE
+    }, 
+    function(car){
+      setTimeout(function(){ car.reset().play(); }, 3000);
+    }
+);
+*/

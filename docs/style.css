@@ -20,7 +20,7 @@ div#console_log{
     bottom: 25px;
     z-index: 100;
     background-color: white;
-    width: 130px;
+    width: 400px;
     height: 50px;
     
     line-height: 50px;
@@ -43,14 +43,14 @@ div#console_log{
 
 /*animation*/
 #anim_img_box {
-    position: sticky;
-    width: 100%;
-    height: 80vh;
-    top:0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: lavenderblush;
+  position: sticky;
+  width: 100%;
+  height: 80vh;
+  top:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
 }
 
 #anim_img{
@@ -126,7 +126,8 @@ div#console_log{
 /*final*/
 #final{
     width: 100%;
-    background-color: aliceblue;
+    margin-top: 0%;
+    background-color: white;
     justify-content: center;
     align-items: center;
     margin-left: auto;
@@ -135,7 +136,7 @@ div#console_log{
 }
 
 #hide1 #hide2{
-    background-color: lawngreen;
+    background-color: white;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -169,14 +170,14 @@ div#console_log{
   border-radius: 50%;
   color: #fff;
   line-height: 70px;
-  text-align    : center;      /* 文字位置   */
-  cursor        : pointer;     /* カーソル   */
+  text-align    : center;
+  cursor        : pointer;
   background-color: whitesmoke;
   color         : black;
-  line-height   : 1em;         /* 1行の高さ  */
+  line-height   : 1em;
   opacity       : 1;           /* 透明度     */
   transition    : .3s;         /* なめらか変化 */
-  box-shadow    : 3px 3px 3px #666666;  /* 影の設定 */
+  /*box-shadow    : 3px 3px 3px #666666;  /* 影の設定 */
 }
 .button:hover {
   box-shadow    : none;        /* カーソル時の影消去 */
@@ -198,7 +199,7 @@ div#header-fixed
 
 div#header #other
 { 
-  background-color: lawngreen;
+  background-color: white;
   /*position: fixed;             ヘッダーの固定 */
   top: 0px;                   /* 位置(上0px) */
   left: 0px;                  /* 位置(右0px) */
@@ -329,7 +330,7 @@ footer{
   background: #FFF;
   z-index: 8;
  }
- #loading {
+#loading {
   display: none;
   position: fixed;
   top: 50%;
@@ -341,4 +342,103 @@ footer{
   text-align: center;
   color: #fff;
   z-index: 9;
- }
+}
+
+#jikan{
+  position: fixed;
+  right: 25px;
+  bottom: 25px;
+  z-index: 100;
+  width: 70%;
+  height: 70px;
+
+  justify-content: center;
+  align-items: center;
+}
+
+
+.cls-1 {
+  fill: #000;
+  stroke: #000;
+  stroke-miterlimit: 10;
+}
+
+#ihun{
+  width: 10%;
+}
+
+#ihunhan{
+  width: 100%;
+}
+
+#nihun{
+  width: 100%;
+}
+
+#sanhun{
+  width: 10%;
+}
+
+#ramen1{
+  width: 100%;
+}
+
+#ramen2{
+  width: 100%;
+}
+
+#ramen3{
+  width: 100%;
+}
+
+#ramen4{
+  width: 100%;
+}
+
+#men_1{
+  width: 100%;
+}
+#men_2{
+  width: 100%;
+}
+#men_3{
+  width: 100%;
+}
+
+#men_4{
+  width: 100%;
+}
+
+#yakan1{
+  width: 100%;
+}
+#sunadokei_1{
+  width: 100%;
+}
+
+#lside{
+
+  position: fixed;
+  top: 3%;
+  left: 30%;
+  bottom: 30%;
+  z-index: 100;
+  width: 6.5%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#rside{
+
+  position: fixed;
+  top: 3%;
+  right: 30%;
+  bottom: 30%;
+  z-index: 100;
+  width: 6.5%;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
