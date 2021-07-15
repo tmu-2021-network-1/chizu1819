@@ -4,7 +4,7 @@ var tmp2 = {};
 var tmp3 = {};
 loadImageToTmp();
 function loadImageToTmp(){
-  for(var i=1;i<=300;i++){
+  for(var i=1;i<=600;i++){
     const _i = i;
     
     const img = new Image();
@@ -34,7 +34,7 @@ const image = document.getElementById("anim_img");
 const image2 = document.getElementById("anim_img2");
 const image3 = document.getElementById("anim_img3");
 
-var SIZE = 300;// 枚数
+var SIZE = 600;// 枚数
 const PX = 500; // 100px分の移動ごと画像を1枚進める 
 //const offset = $("#anim_img_box").offset();
 const myMain = document.getElementById("anim_img_box");
