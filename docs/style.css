@@ -55,6 +55,7 @@ div#console_log{
 
 #anim_img{
     width: 100%;
+    margin-top: 20vh;
 }
 #anim_img_box2{
   position: sticky;
@@ -69,6 +70,7 @@ div#console_log{
 
 #anim_img2{
   width: 100%;
+  margin-top: 20vh;
 }
 
 #anim_img_box3{
@@ -84,12 +86,13 @@ div#console_log{
 
 #anim_img3{
   width: 100%;
+  margin-top: 20vh;
 }
 
 #oyu_img_box{
   position: sticky;
   width: 100%;
-  height: 80vh;
+  height: 70vh;
   top:0;
   display: flex;
   justify-content: center;
@@ -135,7 +138,7 @@ div#console_log{
     text-align: center;
 }
 
-#hide1 #hide2{
+#hide1 #hide2 #hide3 #hide4 #hide5{
     background-color: white;
     justify-content: center;
     align-items: center;
@@ -143,22 +146,6 @@ div#console_log{
 }
 
 /*待ち直すボタン*/
-/*
-.scroll-top {
-    font-size: 15px;
-    position: fixed;
-    right: 25px;
-    bottom: 25px;
-    z-index: 100;
-    background-color: lightcoral;
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    color: #fff;
-    line-height: 70px;
-    text-align: center;
-}
-*/
 #js-scroll-top {
   font-size     : 10pt;
   position: fixed;
