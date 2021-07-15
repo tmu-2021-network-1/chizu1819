@@ -35,7 +35,7 @@ const image2 = document.getElementById("anim_img2");
 const image3 = document.getElementById("anim_img3");
 
 var SIZE = 600;// 枚数
-const PX = 500; // 100px分の移動ごと画像を1枚進める 
+const PX = 1000; // 100px分の移動ごと画像を1枚進める 
 //const offset = $("#anim_img_box").offset();
 const myMain = document.getElementById("anim_img_box");
 const rect = myMain.getBoundingClientRect();
@@ -265,7 +265,7 @@ new Vivus('rcanvas1', {
 );
 
 new Vivus('rcanvas2', {
-    start: 'autostart', duration: 30000,
+    start: 'autostart', duration: 20000,
     type: 'delayed',
     animTimingFunction: Vivus.EASE
     }, 
@@ -276,7 +276,7 @@ new Vivus('rcanvas2', {
   
   new Vivus('rcanvas3', {
     start: 'autostart', 
-    type: 'delayed', duration: 40000,
+    type: 'delayed', duration: 30000,
     animTimingFunction: Vivus.EASE
     }, 
     function(car){
@@ -286,7 +286,7 @@ new Vivus('rcanvas2', {
 
 new Vivus('rcanvas4', {
     start: 'autostart', 
-    type: 'delayed', duration: 20000,
+    type: 'delayed', duration: 10000,
     animTimingFunction: Vivus.EASE
     }, 
     function(car){
@@ -297,7 +297,7 @@ new Vivus('rcanvas4', {
 
 new Vivus('men1', {
     start: 'autostart', 
-    type: 'delayed', duration: 50000,
+    type: 'delayed', duration: 40000,
     animTimingFunction: Vivus.EASE
     }, 
     function(car){
@@ -307,7 +307,7 @@ new Vivus('men1', {
 
 new Vivus('men2', {
     start: 'autostart', 
-    type: 'delayed', duration: 60000,
+    type: 'delayed', duration: 50000,
     animTimingFunction: Vivus.EASE
     }, 
     function(car){
@@ -317,7 +317,7 @@ new Vivus('men2', {
   
 new Vivus('men3', {
     start: 'autostart', 
-    type: 'delayed', duration: 70000,
+    type: 'delayed', duration: 60000,
     animTimingFunction: Vivus.EASE
     }, 
     function(car){
@@ -327,7 +327,7 @@ new Vivus('men3', {
 
 new Vivus('men4', {
     start: 'autostart', 
-    type: 'delayed', duration: 80000,
+    type: 'delayed', duration: 70000,
     animTimingFunction: Vivus.EASE
     }, 
     function(car){
