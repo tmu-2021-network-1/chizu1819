@@ -276,7 +276,7 @@ new Vivus('rcanvas2', {
   
   new Vivus('rcanvas3', {
     start: 'autostart', 
-    type: 'delayed', duration: 30000,
+    type: 'delayed', duration: 20000,
     animTimingFunction: Vivus.EASE
     }, 
     function(car){
@@ -297,7 +297,7 @@ new Vivus('rcanvas4', {
 
 new Vivus('men1', {
     start: 'autostart', 
-    type: 'delayed', duration: 40000,
+    type: 'delayed', duration: 20000,
     animTimingFunction: Vivus.EASE
     }, 
     function(car){
@@ -307,7 +307,7 @@ new Vivus('men1', {
 
 new Vivus('men2', {
     start: 'autostart', 
-    type: 'delayed', duration: 50000,
+    type: 'delayed', duration: 30000,
     animTimingFunction: Vivus.EASE
     }, 
     function(car){
@@ -317,7 +317,7 @@ new Vivus('men2', {
   
 new Vivus('men3', {
     start: 'autostart', 
-    type: 'delayed', duration: 60000,
+    type: 'delayed', duration: 40000,
     animTimingFunction: Vivus.EASE
     }, 
     function(car){
@@ -327,7 +327,7 @@ new Vivus('men3', {
 
 new Vivus('men4', {
     start: 'autostart', 
-    type: 'delayed', duration: 70000,
+    type: 'delayed', duration: 50000,
     animTimingFunction: Vivus.EASE
     }, 
     function(car){
