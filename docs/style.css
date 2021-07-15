@@ -138,11 +138,35 @@ div#console_log{
     text-align: center;
 }
 
-#hide1 #hide2 #hide3 #hide4 #hide5{
+#hide1{
     background-color: white;
     justify-content: center;
     align-items: center;
     text-align: center;
+}
+#hide2{
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#hide3{
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#hide4{
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+#hide5{
+  background-color: white;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 /*待ち直すボタン*/
