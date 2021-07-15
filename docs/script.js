@@ -120,6 +120,14 @@ const countUp = () => {
             {
                 //待ち直すボタンの表示
             });
+            $('#final_lside').show('fast', function() 
+            {
+                
+            });
+            $('#final_rside').show('fast', function() 
+            {
+                
+            });
         
             clearTimeout(timeoutId);//timeoutIdをclearTimeoutで指定している
             console.log(count);
