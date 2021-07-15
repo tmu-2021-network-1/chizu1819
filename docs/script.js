@@ -1,7 +1,7 @@
 let oyu;
 function preload()//preloadが終わらないとsetupに行かない、重たいファイルとかちゃんとここで読み込もう
 {
-  oyu= loadImage('oyu.mp4');//レインボー羊
+  oyu= loadImage('oyu.mp4');
 }
 
 //アニメーション
