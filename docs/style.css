@@ -430,7 +430,7 @@ footer{
 #lside{
 
   position: fixed;
-  top: 3%;
+  top: 10vh;
   left: 30%;
   bottom: 30%;
   z-index: 100;
@@ -441,7 +441,7 @@ footer{
 }
 #final_lside{
   position: fixed;
-  top: 3%;
+  top: 10vh;
   left: 30%;
   bottom: 30%;
   z-index: 100;
@@ -455,7 +455,7 @@ footer{
 #rside{
 
   position: fixed;
-  top: 3%;
+  top: 10vh;
   right: 30%;
   bottom: 30%;
   z-index: 100;
@@ -467,7 +467,7 @@ footer{
 #final_rside{
 
   position: fixed;
-  top: 3%;
+  top: 10vh;
   right: 30%;
   bottom: 30%;
   z-index: 100;
