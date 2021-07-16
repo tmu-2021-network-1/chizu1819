@@ -110,7 +110,7 @@ const countUp = () => {
 
     $(window).scroll(function () {
         var pos = $('#anim_img_box').offset();/* mvを過ぎたmainタグの高さを取得して変数[pos]に格納 */
-        var pos2 = $('.oyuboxContainer').offset();
+        var pos2 = $('.animboxContainer').offset();
     
         if($(this).scrollTop() > pos2.top) {
             $('#lside').show('fast', function() 
